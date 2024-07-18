@@ -73,9 +73,25 @@
         background-color: red;
     }
 }
-
+.live .section-slide {
+    height: 380px;
+  }
+  .live-info-date {
+    color: #fff;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 5px;
+  }
+  .live-info-time {
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+  }
 @media screen and (max-width:480px){
-.promotion .inner{
+
+  @media screen and (max-width:480px){
+    .promotion .inner{
     width:80%;
 }
 }

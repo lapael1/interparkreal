@@ -132,27 +132,50 @@ window.onload = function () {
     },
   });
   // 티켓 스와이퍼 적용
-const swTicket = new Swiper(".sw-ticket" ,{
-  loop:true,
-  breakpoints : {
-    480: {
-      spaceBetween: 32,
-      slidesPerView: 2,
-     
-     
+  const swTicket = new Swiper(".sw-ticket", {
+    loop: true,
+    breakpoints: {
+      480: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+      },
+      navigation: {
+        nextEl: ".ticket .sw-next",
+        prevEl: ".ticket .sw-prev",
+      },
+      pagination: {
+        el: ".sw-ticket-pg ",
+        clickable: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     },
-    1024: {
-      spaceBetween: 32,
-      slidesPerView: 3,
-    
-   
-    },
-    1280: {
-      spaceBetween: 26,
-      slidesPerView:4,
-      
-    
-    },
-  },
-})
+  });
+
+  // live스와퍼
+  const swLive = new Swiper(".sw-live", {
+    breakpoints: {
+      320: {
+        spaceBetween: 12,
+        slidesPerView: 2,
+      },
+      768: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+  }}});
 };
