@@ -7,6 +7,7 @@
 @import url("tour.css");
 @import url("ticket.css");
 @import url("live.css");
+@import url("book.css");
 * {
   margin: 0;
   padding: 0;
@@ -69,7 +70,7 @@ body {
   background-color: #111 !important;
   color: #fff !important;
 }
-.section-slide{
+.section-slide {
   margin-bottom: 20px;
 }
 /* 섹션 하단의 링크버튼 */

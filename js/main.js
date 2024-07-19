@@ -178,4 +178,31 @@ window.onload = function () {
         spaceBetween: 26,
         slidesPerView: 4,
   }}});
+
+  // 북 스와이퍼 적용
+  const swBook = new Swiper(".sw-books", {
+    navigation: {
+      nextEl: ".books .sw-next",
+      prevEl: ".books .sw-prev",
+    },
+    pagination: {
+      el: ".sw-books-pg ",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 12,
+        slidesPerView: 2,
+      },
+      768: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+   
+        
+        
+  }}});
 };
