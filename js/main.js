@@ -233,33 +233,45 @@ const swEvent = new Swiper(".sw-event", {
     nextEl: ".event .sw-next",
     prevEl: ".event .sw-prev",
   },
-  breakpoints: {
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      grid: {
-        rows: 1,
+  loop: true,
+    slidesPerView: 1.1,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    spaceBetween: 10,
+    breakpoints: {
+      480: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+        grid: {
+          rows: 1,
+        },
+        slidesPerGroup: 3,
+      },
+      680: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+        grid: {
+          rows: 1,
+        },
+        slidesPerGroup: 3,
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        grid: {
+          rows: 1,
+        },
       },
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 4,
-      slidesPerGroup: 3,
-      spaceBetween: 30,
-      grid: {
-        rows: 1,
-      },
-    },
-    1280: {
-      slidesPerView: 5,
-      slidesPerGroup: 5,
-      spaceBetween: 12,
-      grid: {
-        rows: 1,
-      },
-    },
-  },
-})};
+  })};
