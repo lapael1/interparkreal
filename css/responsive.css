@@ -122,3 +122,9 @@
     height: 150px;
   }
 }
+
+@media screen and (max-width: 320px){
+  .books-img{
+    height: 160px;
+  }
+}
